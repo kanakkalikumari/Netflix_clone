@@ -1,0 +1,271 @@
+@media(max-width:300px){
+    .container{
+        display: block;
+    }
+}
+
+*{  /*select all the elements at a place*/
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.top-header,.body-section,.faq-container{
+    border-bottom: 5px solid #535251 ;
+}
+ .top-header{    /* selector to select class name */
+    height: 80vh;
+    background-image: url(./background\ image.jpg);
+}
+
+.container{
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.btn{
+    background-color: #e50815; 
+    padding: 0 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition:2s;
+   
+
+}
+.btn:hover{
+    background-color:rgb(237, 6, 195); 
+    padding: 0 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    
+    
+}
+
+.language-picker{
+    padding: 10px 30px;
+    background-color: #000000b3;
+    color: white;
+    border: 1px solid #535251;
+    border-radius:5px ;
+
+}
+
+
+.dropdown-container{ 
+    position: relative;
+}
+.language, .drop-down{
+    position:absolute;
+    top:5px;
+
+}
+.drop-down{
+    right:-2px;
+    top:6px;
+}
+.navbar{
+    margin: 0 100px;
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.right-half{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+/*header content styles*/
+.content{
+    margin:20vh auto;
+    width: 60%;
+    top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h1,.content p{
+    margin-top: 20px ;
+}
+.content h1{
+    font-size:50px;
+    font-weight: bold;
+}
+.content p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.email-container{
+   
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    margin-top: 20px;
+
+}
+.email-container > input{
+    flex-grow: 1;           /*adjust the 1 part of the available free space*/
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid #535251;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+.get-started-btn{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.get-started-btn > span{
+    font-size: 30px !important;
+}
+
+ /*body section */
+ .body-section{
+    display: flex;
+    align-items:center;
+    padding:40px 100px;
+ }
+
+ .right-item{
+    position:relative;
+ }
+
+ .right-item > video{
+    position: absolute;
+    left: 80px;
+    top: 20%;
+    z-index:-1;
+ }
+
+ .left-item h1,.right-item h1{
+    font-size:50px ;
+    margin-bottom: 20px;
+ }
+ .left-item p,.right-item p{
+    font-size: 24px;
+ }
+ .layout{
+    border: 2px solid #535251;
+    border-radius: 10px;
+    background-color: black;
+    position:absolute;
+    bottom: 40px;
+    width: 50%;
+    left: 25%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+ }
+ .layout p{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column ;
+ }
+ .layout p span{
+    color:rgb(2, 97, 213);
+ }
+ .layout img{
+    width:60px;
+ }
+
+ .static-left-item{
+    position:relative;
+ }
+
+ 
+ .faq-container{
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+ }
+
+ .faq-container > h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+ }
+ .faq{
+    border-radius: 4px ;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 20px;
+    background-color: #2D2D2D;
+    transition-duration:0.5s ;
+ }
+ .faq > p{
+    font-size: 20px;
+
+ }
+ .faq > span{
+
+    font-size: 40px;
+ }
+
+ .faq:hover{
+    background-color: #535251;
+ }
+
+ .faq-container > p{
+    font-size: 25px;
+    margin: 40px 0;
+    margin-bottom: -10px;
+
+ }
+ /* footer styles */
+
+ .footer-container{
+    padding: 100px;
+ }
+ .footer-container,.footer-container a{
+    color:#afafaf ;
+}
+
+ .links-container{
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px;
+    padding: 40px 0;
+ }
+
+.links-item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@keyframes animation1 {
+    from{transform: translateX(0%);
+        opacity: 0;
+    }
+    to{transform: translateX(90%);
+        opacity: 1;
+    }
+}
+
+@keyframes animation2 {
+    from{transform: translateX(0%);
+        opacity: 0;
+    }
+    to{transform: translateX(80%);
+        opacity: 1;
+    }
+}
